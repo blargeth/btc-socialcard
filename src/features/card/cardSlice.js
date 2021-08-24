@@ -24,11 +24,11 @@ export const cardSlice = createSlice({
   initialState,
   reducers: {
     increment: (state, action) => {
-      if (!action) {
+      if (!action.payload) {
         let newCard = faker.helpers.contextualCard();
-        let {name, username, avatar, email, phone, website, address, company} = newCard;
-        let newObj = {name, username, avatar, email, phone, website, address, company}
-        state.value.push(newObj);
+        // let {name, username, avatar, email, phone, website, address, company} = newCard;
+        // let newObj = {name, username, avatar, email, phone, website, address, company}
+        state.value.push(newCard);
       } else {
         let {
           name = 'test',

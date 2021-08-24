@@ -39,7 +39,8 @@ export function AddNew() {
 
   return (
     <div className="addNewInfo">
-      <button onClick={() => {dispatch(increment(newData))}}> Add new person</button>
+      <button onClick={() => {dispatch(increment(newData))}}> Add new person with information below</button>
+      <button onClick={() => {dispatch(increment())}}> Add new random person</button>
       <button onClick={() => {dispatch(decrement())}}> Delete last person</button>
       <div className="newButtonInfo">
         <div> Name </div>
