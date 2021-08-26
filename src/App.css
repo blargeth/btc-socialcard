@@ -141,7 +141,7 @@
     margin-top: 40px;
     margin-right: 27px;
 
-    min-width: 315px;
+    max-width: 315px;
     height: 396px;
   
     border-radius: 10.3792px;
